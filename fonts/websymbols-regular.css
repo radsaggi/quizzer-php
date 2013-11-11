@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Nov, 2013, 12:49:03 PM
+    Author     : ashutosh
+*/
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('./websymbols-regular-webfont.eot');
+    src: url('./websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./websymbols-regular-webfont.woff') format('woff'),
+         url('./websymbols-regular-webfont.ttf') format('truetype'),
+         url('./websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

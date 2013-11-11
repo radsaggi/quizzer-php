@@ -1,0 +1,279 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov, 2013, 3:29:17 PM
+    Author     : ashutosh
+*/
+body {
+    background: url("./images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
+}
+#register{
+    margin: 0px auto;	
+    width: 500px;
+    position: relative;	
+    top: 3.5em;
+    padding: 8px 6% 60px 6%;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.8);
+    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    -webkit-box-shadow: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0.88;
+}
+
+/**** general text styling ****/
+#register a{
+    color: rgb(95, 155, 198);
+    text-decoration: underline;
+}
+#register h1, #done-display h2{
+    font-size: 48px;
+    color: rgb(6, 106, 117);
+    padding: 0 0 10px 0;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    border-bottom: 2.5px solid #98B3B7;
+}
+#register #error-msg {
+    color: red;
+    text-align: center;
+    text-shadow: 0 0 4px #e06767;
+}
+#register p{
+    margin-bottom:15px;
+}
+#register p:first-child{
+    margin: 0px;
+}
+#register label{
+    color: rgb(64, 92, 96);
+    position: relative;
+}
+#register input{
+    width: 92%;
+    margin-top: 4px;
+    padding: 10px 5px 10px 32px;	
+    border: 1px solid rgb(178, 178, 178);
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing : content-box;
+    box-sizing : content-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#register input.error-component {
+    box-shadow: 0 0 8px #e00000;
+}
+#register input:active,
+#register input:focus{
+    border: 1px solid rgba(91, 90, 90, 0.7);
+    background: rgba(238, 236, 240, 0.2);	
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+    -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+#register #email-input {
+    position: relative;
+}
+#register #email-input input, label{
+    position: static;
+}
+#register #email-input span {
+    position: absolute;
+    padding: 10px 15px 10px 12px;
+    right: 0.1em;
+    bottom: 0.1em;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: rgb(247, 248, 241);
+    font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+    color: #888;
+}
+
+/** the magic icon trick ! **/
+[data-icon]:after {
+    content: attr(data-icon);
+    font-family: 'FontomasCustomRegular';
+    color: rgb(106, 159, 171);
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    width: 30px;
+}
+
+/*styling both submit buttons */
+#register p.button input{
+    width: 30%;
+    cursor: pointer;	
+    background: rgb(61, 157, 179);
+    padding: 8px 5px;
+    font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+    color: #fff;
+    font-size: 24px;	
+    border: 1px solid rgb(28, 108, 122);	
+    margin-bottom: 10px;	
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;	
+    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(254, 254, 254),
+        0px 5px 3px 3px rgb(210, 210, 210);
+    -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(254, 254, 254),
+        0px 5px 3px 3px rgb(210, 210, 210);
+    box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(254, 254, 254),
+        0px 5px 3px 3px rgb(210, 210, 210);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#register p.button input:hover{
+    background: rgb(74, 179, 198);
+}
+#register p.button input:active,
+#register p.button input:focus{
+    background: rgb(40, 137, 154);
+    position: relative;
+    top: 1px;
+    border: 1px solid rgb(12, 76, 87);	
+    -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+#register p.login.button,
+#register p.signin.button{
+    text-align: right;
+    margin: 5px 0;
+}
+
+/*styling the links to change from one form to another */
+
+#register p.change_link{
+    position: absolute;
+    color: rgb(127, 124, 124);
+    left: 0px;
+    bottom: 0;
+    height: 15px;
+    margin: 0;
+    width: 100%;
+    padding: 17px 0 20px 0;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid rgb(219, 229, 232);
+    -webkit-border-radius: 0 0  5px 5px;
+    -moz-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+    background: rgb(225, 234, 235);
+    background: -moz-repeating-linear-gradient(-45deg, 
+        rgb(247, 247, 247) , 
+        rgb(247, 247, 247) 15px, 
+        rgb(225, 234, 235) 15px, 
+        rgb(225, 234, 235) 30px, 
+        rgb(247, 247, 247) 30px
+        );
+    background: -webkit-repeating-linear-gradient(-45deg, 
+        rgb(247, 247, 247) , 
+        rgb(247, 247, 247) 15px, 
+        rgb(225, 234, 235) 15px, 
+        rgb(225, 234, 235) 30px, 
+        rgb(247, 247, 247) 30px
+        );
+    background: -o-repeating-linear-gradient(-45deg, 
+        rgb(247, 247, 247) , 
+        rgb(247, 247, 247) 15px, 
+        rgb(225, 234, 235) 15px, 
+        rgb(225, 234, 235) 30px, 
+        rgb(247, 247, 247) 30px
+        );
+    background: repeating-linear-gradient(-45deg, 
+        rgb(247, 247, 247) , 
+        rgb(247, 247, 247) 15px, 
+        rgb(225, 234, 235) 15px, 
+        rgb(225, 234, 235) 30px, 
+        rgb(247, 247, 247) 30px
+        );
+}
+#register p.change_link a {
+    display: inline-block;
+    font-weight: bold;
+    background: rgb(247, 248, 241);
+    padding: 2px 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid rgb(203, 213, 214);
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s  linear;
+    -o-transition: all 0.4s linear;
+    -ms-transition: all 0.4s  linear;
+    transition: all 0.4s  linear;
+}
+#register p.change_link a:hover {
+    color: rgb(57, 191, 215);
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(74, 179, 198);
+}
+#register p.change_link a:active{
+    position: relative;
+    top: 1px;
+}
+#done-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.6);
+}
+#done-display div {
+    opacity: 1;
+    width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    padding-top: 2px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    box-shadow: 0 0 5px #00c3ff;
+}
+#done-display p {
+    text-align: center;
+}
+#done-display a {
+  display: inline-block;
+  margin: 0 0.2em;
+  padding: 3px;
+  background: #97CAF2;
+  border-radius: 2px;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+#done-display a:hover   { background: #53A7EA; }
+#done-display a:active  { background: #C4E1F8; }
+

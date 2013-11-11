@@ -1,0 +1,354 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Nov, 2013, 11:47:29 AM
+    Author     : ashutosh
+*/
+@import "./fonts/mayaculpa.css";
+@import "./fonts/selfdestruct.css";
+@import "./fonts/zephyr.css";
+
+* { 
+    margin: 0; 
+    outline: none; 
+}
+body { 
+    background: url("./images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
+}
+
+#user-info {
+    position: fixed;
+    right:0;
+    top:0;
+}
+#user-info #user {
+    font-family: "Zephyr";
+    position: absolute;
+    right: 150px;
+    top: 0.5em;
+    color: #fff;
+    text-shadow: 0 0 2px #222 inset;
+}
+#user-info #score{
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2d84ff, 0 0 30px #2d84ff, 0 0 40px #2d84ff, 0 0 50px #2d84ff, 0 0 75px #2d84ff;
+    letter-spacing: 5px;
+    font: 100px 'Self Destruct';
+}
+#user-info #score-increase {
+    font: 35px 'Self Destruct';
+    position: absolute;
+    top: 5em;
+    right: 5em;
+    opacity: 0;
+    animation: increase-score 3s ease-in-out 1s 1 normal forwards;
+}
+@keyframes increase-score {
+    0% { }
+    15% {opacity: 1;}
+    100% {opacity: 0;top: 1em;}
+}
+@-webkit-keyframes increase-score {
+    0% { }
+    15% {opacity: 1;}
+    100% {opacity: 0;top: 1em;}
+}
+#button-wrapper {
+    position: fixed;
+    top: 3.5em;
+    left: 1em;
+    height: 38em;
+    width: 50em;
+    font-weight: 100; 
+    overflow: auto;
+    box-shadow: -5px 5px 10px 5px #111;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+#button-wrapper ul {
+    list-style-type: none;
+    margin: 0 1.5em;
+    padding: 0;
+    width: 95%;
+}
+#button-wrapper ul li {
+    display: inline-block;
+    vertical-align: central;
+    margin: 0;
+    padding: 0.5em;
+    height: auto;
+    overflow: auto;
+}
+#button-wrapper h3 {
+    margin: 1.3em 0.5em 0.75em;
+    padding: 0 0 15px 1em;
+    color: #004ab2;
+    font-weight: normal;
+    font-family: 'Maya Culpa', sans-serif;
+    position: relative;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.5),
+        0 0 2px rgba(0,0,0,0.5);
+    font-size: 30px;
+    line-height: 4px;
+}
+#button-wrapper h3:after { 
+    position: absolute;
+    content: "";
+    height: 1px;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+    box-shadow: 
+        0 -1px 0 rgba(0,0,0,0.1), 
+        0 1px 0 rgba(255,255,255,0.6),
+        5px 0 10px rgba(255,255,255,0.7);
+    width: 100%;
+} 
+#button-wrapper .a-btn{
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(0, 0, 0, 0),0),color-stop(rgba(0, 0, 0, 0.2),1));
+    background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background:-moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background:-o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background:linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    padding-left:90px;
+    padding-right:90px;
+    height:90px;
+    display:inline-block;
+    position:relative;
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    float:left;
+    clear:both;
+    overflow:hidden;
+    -webkit-transition:box-shadow 0.3s ease-in-out;
+    -moz-transition:box-shadow 0.3s ease-in-out;
+    -o-transition:box-shadow 0.3s ease-in-out;
+    transition:box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+}
+#button-wrapper .a-btn:hover {
+    border-radius:5px 60px 60px 5px;
+}
+#button-wrapper .a-btn img{
+    position:absolute;
+    left:15px;
+    top:13px;
+    border:none;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    height: 64px;
+}
+#button-wrapper .a-btn .a-btn-slide-text{
+    position:absolute;
+    font-size:36px;
+    top:50px;
+    left:18px;
+    color:#bde086;
+    text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);
+    opacity:0;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#button-wrapper .a-btn-text{
+    padding-top:13px;
+    display:block;
+    font-size:30px;
+}
+#button-wrapper .a-btn-text small{
+    display:block;
+    font-size:11px;
+    letter-spacing:1px;
+}
+#button-wrapper .a-btn-icon-right{
+    position:absolute;
+    right:0px;
+    top:0px;
+    height:100%;
+    width:80px;
+    border-left:1px solid #5d81ab;
+    -webkit-box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+    -moz-box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+    box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+}
+#button-wrapper .a-btn-icon-right span{
+    width:38px;
+    height:38px;
+    opacity:0.7;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-20px 0px 0px -20px;
+    border:1px solid rgba(0,0,0,0.5);
+    background:#5b5b5b url(./images/arrow_right.png) no-repeat center center;
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#button-wrapper .a-btn:hover{
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 5px rgba(0,0,0,0.4);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 5px rgba(0,0,0,0.4);
+}
+#button-wrapper .a-btn:hover img{
+    opacity:0;
+}
+#button-wrapper .a-btn:hover .a-btn-slide-text{
+    opacity:1;
+    top:25px;
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+}
+#button-wrapper .a-btn:hover .a-btn-icon-right span{
+    opacity:1;
+    background-color:#bc3532;
+}
+#button-wrapper .a-btn:active{
+    position:relative;
+    top:1px;
+    background:#5d81ab;
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    border-color:#80a9da;
+}
+#button-wrapper .a-btn:active .a-btn-icon-right span{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+#button-wrapper .a-btn-slide-icon{
+    position:absolute;
+    top:34px;
+    width:22px;
+    height:22px;
+    background:transparent url(./images/arrow_right_black.png) no-repeat top left;
+    left:85%;
+    opacity:0;
+}
+#button-wrapper .a-btn:hover .a-btn-slide-icon{
+    -webkit-animation:slideRight 0.9s linear infinite;
+    -moz-animation:slideRight 0.9s linear infinite;
+    animation:slideRight 0.9s linear infinite;
+}
+@keyframes slideRight{
+    0% { }
+    20% { opacity: 0.4;}
+    100% { left: 350px;}
+}
+@-webkit-keyframes slideRight{
+    0% { }
+    20% { opacity: 0.4;}
+    100% { left: 350px;}
+}
+@-moz-keyframes slideRight{
+    0% { }
+    20% { opacity: 0.4;}
+    100% { left: 350px;}
+}
+#button-wrapper .a-btn.unopened {
+    background-color:#80a9da;
+}
+#button-wrapper .a-btn.unopened .a-btn-text {
+    color: #002e70;
+    text-shadow:0px -1px 1px #5d81ab;
+}
+
+#button-wrapper .a-btn.opened {
+    background-color:#eabe05;
+}
+#button-wrapper .a-btn.opened .a-btn-text {
+    color: #5a4a06;
+    text-shadow:0px -1px 1px #5a4a06;
+}
+
+#button-wrapper .a-btn.answered {
+    background-color:#66cc00;
+}
+#button-wrapper .a-btn.answered .a-btn-text {
+    color: #006633;
+    text-shadow:0px -1px 1px #002814;
+}
+
+#complete-hide {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.6);
+    animation: vanish 1s ease-out 1 normal;
+    -webkit-animation: vanish 1s ease-out 1 normal;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 100;
+}
+
+#complete-hide #message-display {
+    position: static;
+    width: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px 2px #ddd;
+}
+
+#complete-hide #message-display h2 {
+    text-align: center;
+}
+
+@keyframes vanish {
+    0%{display:block;opacity:1;}
+    90%{opacity:0.5;}
+    95%{opacity:0.25;}
+    100%{opacity:0;display:none;z-index:-1;}
+}
+@-webkit-keyframes vanish {
+    0%{display:block;opacity:1;}
+    90%{opacity:0.5;}
+    95%{opacity:0.25;}
+    100%{opacity:0;display:none;z-index:-1;}
+}
