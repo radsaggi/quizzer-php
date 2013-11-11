@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Nov, 2013, 12:52:54 PM
+    Author     : ashutosh
+*/
+
+@font-face {
+    font-family: "Oswald";
+    src: url('./Oswald-Bold.ttf') format('truetype'),
+        url('./Oswald-Light.ttf') format('truetype'),
+        url('./Oswald-Regular.ttf') format('truetype');
+}

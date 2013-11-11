@@ -1,0 +1,63 @@
+
+* { 
+    margin: 0; 
+    outline: none; 
+}
+body {
+    background: url("./images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
+}
+#rules-content {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+#rules-content h2 { 
+    position: fixed;
+    left: -3.3em;
+    top: 7em;
+    padding: 20px 0 10px 0; 
+    font-size: 24px; 
+    line-height: 40px; 
+    font-weight: normal; 
+    color: #000; 
+    text-shadow: 0 1px 3px #222; 
+    font-size:45px;
+    display: block;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#rules-content #rules-list { 
+    width:800px; 
+    margin: 40px auto;
+    padding: 10px 60px;
+    background-color: rgba(233, 233, 233, 0.88); 
+    background-image: linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    box-shadow: 0 0 12px #fff;
+    border-radius: 5px;
+}
+#rules-content #rules-list { 
+    font-style:italic; 
+    font-family:Georgia, Times, serif; 
+    font-size:32px; 
+    color: #00a1d2;  
+    opacity: 1;
+}
+#rules-content #rules-list li p { 
+    margin: 8px; 
+    padding: 8px;
+    font-style:normal;
+    font-family:Arial; 
+    font-size:22px; 
+    color: #222;
+    border-left: 1px solid #999;
+    text-shadow: 0 0 1px #777;
+}
+#rules-content #rules-list li:hover p { 
+    text-shadow: 0 0 3px #00a1d2;
+}
+#rules-content #rules-list li p span {
+    font-style: italic;
+    font-weight: 100;
+}
