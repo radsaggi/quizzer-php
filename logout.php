@@ -6,9 +6,11 @@
  * and open the template in the editor.
  */
 
+$from = "logoutpage";
+
 require './support/check.php';
 
 destroy_session();
-header("Location: " .  dirname($_SERVER["PHP_SELF"]) . "/index.php?msg=Logged%20out...");
-
+header("Location: ./index.php?msg=Logged%20out...");
+die();
 ?>

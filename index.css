@@ -210,6 +210,9 @@ h2 {
     height: 19px;
     background: url("./images/login_arrow.png") 0 0 no-repeat;
 }
+.login .login-submit:hover {
+    box-shadow: 0 0 4px #029BC9;
+}
 /*==============================================================================*/
 
 

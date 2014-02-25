@@ -22,11 +22,12 @@ body {
     position: absolute;
     right:0;
     top:0;
+    z-index: 2;
 }
 #user-info #level{
     position: absolute; 
-    right: 1em;
-    top: 1em;
+    right: 1.5em;
+    top: 1.5em;
     height: 2em;
     width: 2em;
     box-shadow: 0 0 .8em .2em rgba(0,0,0,.32) inset;
@@ -40,20 +41,24 @@ body {
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
+    background: rgb(224, 45, 45);
+    -webkit-animation: throb 1.5s ease-in-out infinite alternate;
+    animation: throb 1.5s ease-in-out infinite alternate;
 }
-#user-info #level:hover { 
-    top: 1.5em;
-    right: 1.5em;
-    transform: scale(2.5);
-    -webkit-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -moz-transform: scale(2.5);
+@keyframes throb {
+    0%{opacity: 0;}
+    100%{opacity: 1; transform: scale(2.5); top: 2.5em;
+         right: 2.5em;}
+}
+@-webkit-keyframes throb {
+    0%{opacity: 0;}
+    100%{opacity: 1; -webkit-transform: scale(2.5); top: 2.5em;
+         right: 2.5em;}
 }
 #user-info #user {
     font-family: "Zephyr";
     position: absolute;
-    right: 150px;
+    right: 2.5em;
     top: 0.5em;
     color: #fff;
     text-shadow: 0 0 2px #222 inset;
@@ -76,6 +81,11 @@ body {
     height: 25em;
     right: 0;
     top: 0;
+}
+#question-div img#cropped {
+    clip: rect(0, auto, 25em, 0);
+    width: auto;
+    height: auto;
 }
 #question-div #question-text {
     position: absolute;
@@ -135,6 +145,51 @@ body {
     -ms-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+#form-wrapper #hint-btn {
+    position: absolute;
+    background: #111;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    border-top: solid 5px #444;
+    text-decoration: none;
+    color: #79A1D1;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-transition: border 0.6s;
+    -moz-transition: border 0.6s;
+    -o-transition: border 0.6s;
+    transition: border 0.6s;
+}
+
+#form-wrapper #hint-btn span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-transform: none;
+    -webkit-transform: rotateX(270deg);
+    transform: perspective(100px) rotateX(270deg);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    padding-top: 10%;
+    background: #444;
+    -o-transition: -o-transform 0.6s;
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    transition: transform 0.6s;
+    border-radius: 0 0 5px 5px;
+}
+#form-wrapper #hint-btn:hover {
+    border-top: solid 5px #999;
+}
+#form-wrapper #hint-btn:hover span {
+    -webkit-transform: none;
+    transform: none;
+}
 
 #form-wrapper #ans {
     display: block;
@@ -162,7 +217,7 @@ body {
 #form-wrapper #ans:focus {
     box-shadow:0 0 12px #3a7ccb;
 }
-#form-wrapper .btn{
+#form-wrapper #submit-btn{
     font-family: "Vanthian";
     background: #80a9da;
     background: -webkit-gradient(linear,left top,left bottom,color-stop(#80a9da,0),color-stop(#6f97c5,1));
@@ -193,7 +248,7 @@ body {
     transition: all 0.3s linear;
     text-decoration: none;
 }
-#form-wrapper .btn-text{
+#form-wrapper #submit-btn .btn-text{
     padding-top: 10px;
     display: block;
     font-size: 18px;
@@ -207,7 +262,7 @@ body {
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
-#form-wrapper .btn-slide-text{
+#form-wrapper #submit-btn .btn-slide-text{
     position:absolute;
     height:100%;
     top:0;
@@ -230,7 +285,7 @@ body {
     -o-transition:width 0.3s linear;
     transition:width 0.3s linear;
 }
-#form-wrapper .btn-icon-right{
+#form-wrapper #submit-btn .btn-icon-right{
     position: absolute;
     right: 0;
     top: 0;
@@ -241,7 +296,7 @@ body {
     -moz-box-shadow: 1px 0px 1px rgba(255,255,255,0.4) inset;
     box-shadow: 1px 0px 1px rgba(255,255,255,0.4) inset;
 }
-#form-wrapper .btn-icon-right span{
+#form-wrapper #submit-btn .btn-icon-right span{
     width:38px;
     height:38px;
     opacity:0.7;
@@ -255,25 +310,25 @@ body {
     -o-transition:all 0.3s linear;
     transition:all 0.3s linear;
 }
-#form-wrapper .btn:hover{
+#form-wrapper #submit-btn:hover{
     padding-right: 13.7em;
     -webkit-padding-end: 27.8%;
     -webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
     box-shadow: 0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
 }
-#form-wrapper .btn:hover .btn-text{
+#form-wrapper #submit-btn:hover .btn-text{
     text-shadow:0px 1px 1px #5d81ab;
     color:#fff;
 }
-#form-wrapper .btn:hover .btn-slide-text{
+#form-wrapper #submit-btn:hover .btn-slide-text{
     width:auto;
     padding-right: 7px;
 }
-#form-wrapper .btn:hover .btn-icon-right span{
+#form-wrapper #submit-btn:hover .btn-icon-right span{
     opacity:1;
 }
-#form-wrapper .btn:active{
+#form-wrapper #submit-btn:active{
     position:relative;
     top:1px;
     background:#5d81ab;

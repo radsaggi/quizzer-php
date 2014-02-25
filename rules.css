@@ -44,6 +44,9 @@ body {
     color: #00a1d2;  
     opacity: 1;
 }
+#rules-content #rules-list>li {
+    border-left: 1px solid #999;
+}
 #rules-content #rules-list li p { 
     margin: 8px; 
     padding: 8px;
@@ -51,7 +54,6 @@ body {
     font-family:Arial; 
     font-size:22px; 
     color: #222;
-    border-left: 1px solid #999;
     text-shadow: 0 0 1px #777;
 }
 #rules-content #rules-list li:hover p { 

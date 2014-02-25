@@ -1,6 +1,6 @@
-
 <?php
-
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 function checkLogin() {
     if (!filter_var($_POST["login"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[\w]+$/')))) {
         $error["msg"] = "Incorrect username";
@@ -19,6 +19,7 @@ function checkLogin() {
         $error["error"] = TRUE;
         return $error;
     }
+    
     $hash = crypt($pass, $query["Hash"]);
 
     if ($hash != $query["Hash"]) {
@@ -41,6 +42,7 @@ if (isset($_POST["login"]) && isset($_POST["password"])) {
     }
 }
 $from = "homepage";
+
 require './support/check.php';
 ?>
 
@@ -48,7 +50,7 @@ require './support/check.php';
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>NJATH - CELESTA 2k13 - HOME</title>
+        <title>NJATH - ANWESHA 2k14 - HOME</title>
         <link href="index.css" rel="stylesheet" type="text/css" />
         <link href="navbar.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -75,6 +77,10 @@ require './support/check.php';
                 <span>IIT Patna</span>
                 <span>All about our college</span>
             </a>
+            <a href="http://2014.anwesha.info">
+                <span>Anwesha 2014</span>
+                <span>The Anwesha website...</span>
+            </a>
             <a href="rules.php">
                 <span>Rules</span>
                 <span>The law of the Land!!!</span>
@@ -84,7 +90,7 @@ require './support/check.php';
 
         <div class="login">
             <h2> NJATH Login : </h2>
-            <form method="post" action="index.php" class="loginform">
+            <form method="post" action="" class="loginform">
                 <p>
                     <label for="login">Username:</label>
                     <input type="text" name="login" id="login" placeholder="Username" autofocus="true"/>
@@ -166,36 +172,7 @@ require './support/check.php';
         <!--image slider finished-->
 
 
-        <div class="footer">
-            <br/>
-            <!--visit us bar -->
-            <div class="visit">
-                <h1>Connect with us ....</h1>
-                <img src="images/reference.png" usemap="#loginmap" alt=""/>
-                <map name="loginmap">
-                    <area shape="rect" coords="0,0,106,192" href="http://www.facebook.com" alt="facebook" />
-                    <area shape="rect" coords="106,0,212,192" href="http://www.twitter.com" alt="twitter" />
-                    <area shape="rect" coords="212,0,318,192" href="stars.htm" alt="blog" />
-                </map>
-            </div>
-            <!--visit us bar completed -->
-
-            <!--updates and info links-
-            <div id="news_ticker">
-                <span>News and Updates</span>
-                <ul>
-                    <?php /* $query = "SELECT * FROM `NewsUpdates`";
-                    $query = mysqli_query($db_connection, $query);
-                    while ($result = mysqli_fetch_array($query)) {
-                        ?>
-                        <li><?php echo $result["Message"]; ?></li>
-                        <?php
-                    }*/
-                    ?>
-                </ul>
-            </div>
-            --updates and info links completed-->
-        </div>
+        
 
         <?php
         if (isset($_GET["msg"])) {

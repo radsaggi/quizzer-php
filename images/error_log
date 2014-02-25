@@ -1,0 +1,278 @@
+[25-Jan-2014 22:22:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/anwesha/public_html/njath/images/image.php:14) in /home/anwesha/public_html/njath/images/image.php on line 35
+[25-Jan-2014 22:22:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/anwesha/public_html/njath/images/image.php:14) in /home/anwesha/public_html/njath/images/image.php on line 35
+[25-Jan-2014 22:59:54 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 16
+[25-Jan-2014 22:59:54 UTC] PHP Warning:  imagecreatefromjpeg(): './a0ch.png' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 16
+[25-Jan-2014 22:59:54 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 29
+[25-Jan-2014 23:00:39 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 16
+[25-Jan-2014 23:00:39 UTC] PHP Warning:  imagecreatefromjpeg(): 'a0ch.png' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 16
+[25-Jan-2014 23:00:39 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 29
+[25-Jan-2014 23:01:55 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 21
+[25-Jan-2014 23:01:55 UTC] PHP Warning:  imagecreatefromjpeg(): 'a0ch.png' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 21
+[25-Jan-2014 23:01:55 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 34
+[25-Jan-2014 23:02:00 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 21
+[25-Jan-2014 23:02:00 UTC] PHP Warning:  imagecreatefromjpeg(): 'a0ch.png' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 21
+[25-Jan-2014 23:02:00 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 34
+[26-Jan-2014 11:39:43 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:39:43 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:39:43 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:04 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:04 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:04 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:06 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:06 UTC] PHP Warning:  imagecreatefromjpeg(): '0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:06 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:08 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:08 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:08 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:10 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:10 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:10 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:17 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:17 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:17 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:18 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:18 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:18 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:40:30 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:30 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:40:30 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:41:23 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:41:23 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:41:23 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:42:55 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:42:55 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:42:55 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:43:13 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:13 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:13 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:43:25 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:25 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:43:42 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:42 UTC] PHP Warning:  imagecreatefromjpeg(): 'ov865w.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:42 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:43:49 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:49 UTC] PHP Warning:  imagecreatefromjpeg(): '0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:43:49 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:44:29 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:29 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:29 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:44:45 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:45 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:45 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:44:53 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:53 UTC] PHP Warning:  imagecreatefromjpeg(): '0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:53 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:44:57 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:57 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:44:57 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:45:14 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:45:14 UTC] PHP Warning:  imagecreatefromjpeg(): 'x5LkU5.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:45:14 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:45:18 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:45:18 UTC] PHP Warning:  imagecreatefromjpeg(): '8vG63C.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:45:18 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:45:54 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:45:54 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:45:54 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:46:03 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:03 UTC] PHP Warning:  imagecreatefromjpeg(): 'W4oqDu.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:03 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:46:16 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:16 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:16 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:46:20 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:20 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:20 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:46:35 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:35 UTC] PHP Warning:  imagecreatefromjpeg(): '080x7l.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:46:35 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:47:09 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:09 UTC] PHP Warning:  imagecreatefromjpeg(): '23Bol2.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:09 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:47:31 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:31 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:31 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:47:34 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:34 UTC] PHP Warning:  imagecreatefromjpeg(): '0Q8ug0.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:34 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:47:37 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:37 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:47:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:48:05 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:05 UTC] PHP Warning:  imagecreatefromjpeg(): '0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:05 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:48:17 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:17 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:17 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:48:24 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:24 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:24 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:48:37 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:37 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:37 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:48:47 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:47 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:48:47 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:49:14 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:49:14 UTC] PHP Warning:  imagecreatefromjpeg(): 'hji89g.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:49:14 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/anwesha/public_html/njath/images/image_exp.php on line 42
+[26-Jan-2014 11:49:49 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:49:49 UTC] PHP Warning:  imagecreatefromjpeg(): 'hji89g.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:50:03 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:50:03 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:50:16 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:50:16 UTC] PHP Warning:  imagecreatefromjpeg(): '0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:50:43 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:50:43 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:51:07 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:51:07 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:51:56 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:51:56 UTC] PHP Warning:  imagecreatefromjpeg(): '0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:52:02 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:52:02 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:52:59 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:52:59 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:55:16 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:55:16 UTC] PHP Warning:  imagecreatefromjpeg(): 'W4oqDu.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:58:58 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:58:58 UTC] PHP Warning:  imagecreatefromjpeg(): './0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:04 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:04 UTC] PHP Warning:  imagecreatefromjpeg(): './zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:06 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:06 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:20 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:20 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:29 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:29 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:31 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 11:59:31 UTC] PHP Warning:  imagecreatefromjpeg(): './0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:24 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:24 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:24 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:24 UTC] PHP Warning:  imagecreatefromjpeg(): './0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:44 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:44 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:53 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:01:53 UTC] PHP Warning:  imagecreatefromjpeg(): './0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:04:56 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:04:56 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:11 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:11 UTC] PHP Warning:  imagecreatefromjpeg(): './zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:39 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:39 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:40 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:40 UTC] PHP Warning:  imagecreatefromjpeg(): './zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:40 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:40 UTC] PHP Warning:  imagecreatefromjpeg(): './0Bb3bk.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:42 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:42 UTC] PHP Warning:  imagecreatefromjpeg(): './vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:52 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:05:52 UTC] PHP Warning:  imagecreatefromjpeg(): './ov865w.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:06:01 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:06:01 UTC] PHP Warning:  imagecreatefromjpeg(): './8vG63C.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:06:14 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:06:14 UTC] PHP Warning:  imagecreatefromjpeg(): './W4oqDu.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:04 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:04 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:05 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:05 UTC] PHP Warning:  imagecreatefromjpeg(): 'W4oqDu.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:21 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:21 UTC] PHP Warning:  imagecreatefromjpeg(): '080x7l.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:34 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:07:34 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:08:27 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:08:27 UTC] PHP Warning:  imagecreatefromjpeg(): '0Q8ug0.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:08:28 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:08:28 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:09:32 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:09:32 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:09:37 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:09:37 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:09:52 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:09:52 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:10:02 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:10:02 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:10:08 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:10:08 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:10:09 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:10:09 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:12:03 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:12:03 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:12:26 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:12:26 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:12:56 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:12:56 UTC] PHP Warning:  imagecreatefromjpeg(): 'ov865w.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:13:02 UTC] PHP Warning:  imagecopy() expects exactly 8 parameters, 10 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:13:13 UTC] PHP Warning:  imagecopy() expects exactly 8 parameters, 10 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:14:20 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:15:28 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:15:38 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:15:45 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:17:04 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:17:04 UTC] PHP Warning:  imagecreatefromjpeg(): 'vjTzdl.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:17:14 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:17:21 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:17:34 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:17:34 UTC] PHP Warning:  imagecreatefromjpeg(): '080x7l.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:17:45 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:17:45 UTC] PHP Warning:  imagecreatefromjpeg(): '080x7l.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:18:26 UTC] PHP Warning:  imagecopyresampled() expects exactly 10 parameters, 8 given in /home/anwesha/public_html/njath/images/image_exp.php on line 51
+[26-Jan-2014 12:18:39 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:18:39 UTC] PHP Warning:  imagecreatefromjpeg(): 'zrGoGU.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:28:33 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:28:33 UTC] PHP Warning:  imagecreatefromjpeg(): '23Bol2.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:28:53 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:28:53 UTC] PHP Warning:  imagecreatefromjpeg(): '23Bol2.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:29:02 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:29:02 UTC] PHP Warning:  imagecreatefromjpeg(): '23Bol2.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:29:44 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:29:44 UTC] PHP Warning:  imagecreatefromjpeg(): '23Bol2.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:30:33 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:30:33 UTC] PHP Warning:  imagecreatefromjpeg(): 'W4oqDu.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:30:47 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error:  in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:30:47 UTC] PHP Warning:  imagecreatefromjpeg(): '080x7l.jpg' is not a valid JPEG file in /home/anwesha/public_html/njath/images/image_exp.php on line 28
+[26-Jan-2014 12:30:56 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:31:16 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:31:29 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:31:47 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:31:58 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:31:58 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:32:23 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:33:15 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:34:50 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:35:40 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:35:41 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:36:03 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:36:11 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:36:14 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:36:19 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 26
+[26-Jan-2014 12:37:09 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:37:11 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:37:22 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:37:47 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:38:13 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:38:43 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:38:52 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:09 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:21 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:22 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:23 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:39 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:44 UTC] PHP Warning:  imagecreatefrompng(): 'msIMc3.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:39:59 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:40:04 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:40:17 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:46:34 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 12:48:50 UTC] PHP Warning:  imagecreatefrompng(): 'bTTaEz.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:21:21 UTC] PHP Warning:  imagecreatefrompng(): 'j0j69N.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:21:29 UTC] PHP Warning:  imagecreatefrompng(): 'tOVNXg.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:21:37 UTC] PHP Warning:  imagecreatefrompng(): 'j0j69N.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:21:47 UTC] PHP Warning:  imagecreatefrompng(): 'tOVNXg.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:22:20 UTC] PHP Warning:  imagecreatefrompng(): 'tOVNXg.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:22:21 UTC] PHP Warning:  imagecreatefrompng(): 'j0j69N.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:23:27 UTC] PHP Warning:  imagecreatefrompng(): 'tOVNXg.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:24:37 UTC] PHP Warning:  imagecreatefrompng(): 'j0j69N.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:25:34 UTC] PHP Warning:  imagecreatefrompng(): 'BTg9Te.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:32:39 UTC] PHP Warning:  imagecreatefrompng(): 'j0j69N.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25
+[26-Jan-2014 14:37:44 UTC] PHP Warning:  imagecreatefrompng(): 'tOVNXg.png' is not a valid PNG file in /home/anwesha/public_html/njath/images/image_exp.php on line 25

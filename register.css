@@ -95,18 +95,6 @@ body {
 #register #email-input input, label{
     position: static;
 }
-#register #email-input span {
-    position: absolute;
-    padding: 10px 15px 10px 12px;
-    right: 0.1em;
-    bottom: 0.1em;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background: rgb(247, 248, 241);
-    font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
-    color: #888;
-}
 
 /** the magic icon trick ! **/
 [data-icon]:after {

@@ -1,5 +1,7 @@
-
 <?php
+
+$from = "registerpage";
+require './support/check.php';
 
 function startsWith($haystack, $needle) {
     return $needle === "" || strpos($haystack, $needle) === 0;
@@ -9,54 +11,54 @@ function endsWith($haystack, $needle) {
     return $needle === "" || substr($haystack, -strlen($needle)) === $needle;
 }
 
-function getYear($mail) {
-    $mail_end = substr($mail, strpos($mail, ".") + 1);
-    if (endsWith($mail_end, "10")) {
-        $year = 4;
-    } else if (endswith($mail_end, "11")) {
-        $year = 3;
-    } else if (endsWith($mail_end, "12")) {
-        if (startsWith($mail_end, "mc") || startsWith($mail_end, "mt") ||
-                startsWith($mail_end, "nt")) {
-            $year = 5;
-        } else {
-            $year = 2;
-        }
-    } else if (endsWith($mail_end, "13")) {
-        if (startsWith($mail_end, "mt")) {
-            $year = 5;
-        } else {
-            $year = 1;
-        }
-    }
-    return $year;
+function verify_anw_id($id) {
+    include '../php/db.php';
+//    global $dbc;
+    $query = "SELECT COUNT(*) FROM `participants` WHERE `user_id` = '$id'; ";
+    $res1 = mysqli_fetch_array(mysqli_query($dbc,$query));
+
+    require_once "./support/dbcon.php";
+    global $db_connection;
+    $query = "SELECT COUNT(*) FROM `stud` WHERE `anw_id` = '$id'; ";
+    $res2 = mysqli_fetch_array(mysqli_query($db_connection,$query));
+    
+    return intval($res1["COUNT(*)"]) == 1 || intval($res2["COUNT(*)"]) == 1;
 }
 
 function check() {
-    if (!filter_var($_POST["usernamesignup"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[\w]+$/')))) {
+    global $_POST;
+    global $CONST;
+    if (!filter_var($_POST["usernamesignup"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[\w]{1,15}$/')))) {
         $error["msg"] = "Inappropriate username";
         $error["component"] = "username";
     }
-    if (!filter_var($_POST["emailsignup"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^[a-z]+\.(((cs|ee|me)1(0|1|2|3))|(c(e|h)13)|((mc|mt|nt)12)|(mt(cs|ee|mc|mt|nt)13))$/')))) {
-        $error["msg"] = "Inappropriate email id";
-        $error["component"] = "email";
+    if (!filter_var($_POST["anweshasignup"], FILTER_VALIDATE_REGEXP, array("options" => array('regexp' => '/^ANW[I]?[\d]{4,6}$/'))) ||   
+                 !verify_anw_id($_POST["anweshasignup"])) {
+        $error["msg"] = "Inappropriate Anwesha ID.";
+        $error["component"] = "anwesha";
     }
     if ($_POST["passwordsignup"] != $_POST["passwordsignup_confirm"]) {
         $error["msg"] = "Passwords dont match!!";
         $error["component"] = "password";
     }
+    if (isset($error)) {
+        return $error;
+    }
 
     require_once './support/dbcon.php';
     global $db_connection;
 
-    $query = "SELECT COUNT(*) FROM `Contestants` WHERE `Email` = '{$_POST["emailsignup"]}'";
+    $query = "SELECT COUNT(*) FROM `Contestants` "
+            . "WHERE `Anwesha ID` = '{$_POST["anweshasignup"]}'";
     $result = mysqli_fetch_array(mysqli_query($db_connection, $query));
     if ($result["COUNT(*)"] != 0) {
-        $error["msg"] = "You have already signed up! Use password recovery if you have forgotten your password!";
-        $error["component"] = "email";
+        $error["msg"] = "You have already signed up! "
+                . "Use password recovery if you have forgotten your password!";
+        $error["component"] = "anwesha";
     }
 
-    $query = "SELECT COUNT(*) FROM `Contestants` WHERE `Username` = '{$_POST["usernamesignup"]}'";
+    $query = "SELECT COUNT(*) FROM `Contestants` "
+            . "WHERE `Username` = '{$_POST["usernamesignup"]}'";
     $result = mysqli_fetch_array(mysqli_query($db_connection, $query));
     if ($result["COUNT(*)"] != 0) {
         $error["msg"] = "Username already taken! Please choose another!";
@@ -67,8 +69,7 @@ function check() {
     }
 
     $user = $_POST["usernamesignup"];
-    $mail = $_POST["emailsignup"];
-    $year = getYear($mail);
+    $anws = $_POST["anweshasignup"];
     $pass = $_POST["passwordsignup"];
     $cost = 10;
 
@@ -76,38 +77,42 @@ function check() {
     $salt = sprintf("$2y$%02d$", $cost) . $salt;
     $hash = crypt($pass, $salt);
 
-    $query = "INSERT INTO `Contestants` (`Username` ,`Email` ,`Hash` ,`Year`)
-                    VALUES ('{$user}', '{$mail}', '{$hash}', '{$year}')";
+    $query = "INSERT INTO `Contestants` (`Username` ,`Anwesha ID` ,`Hash`)
+                    VALUES ('{$user}', '{$anws}', '{$hash}')";
+    mysqli_query($db_connection, $query);
+
+    $query = "INSERT INTO `ContestantsData`(`Username`) VALUES ('{$user}')";
     mysqli_query($db_connection, $query);
 
     $query = "CREATE TABLE `Questions-{$user}` ("
-            . "`Pseudo ID` varchar(2) NOT NULL, "
-            . "`Question ID` varchar(2) NOT NULL, "
+            . "`Question Number` varchar(2) NOT NULL, "
+            . "`Question ID` varchar(3) NOT NULL, "
+            . "`Hinted` int(11) DEFAULT '0', "
             . "`Time Opened` int(11) DEFAULT '-1', "
             . "`Time Answered` int(11) DEFAULT '-1', "
             . "`Obtained Score` int(11) NOT NULL DEFAULT '0', "
             . "`Attempts` int(11) DEFAULT '0', "
-            . "PRIMARY KEY (`Pseudo ID`), "
-            . "UNIQUE KEY `Pseudo ID` (`Pseudo ID`), "
+            . "PRIMARY KEY (`Question Number`), "
+            . "UNIQUE KEY `Question Number` (`Question Number`), "
             . "UNIQUE KEY `Question ID` (`Question ID`))";
     $val = mysqli_query($db_connection, $query);
 
     $query = "";
-    $ar = array(1, 2, 3, 4, 5, 6);
-    for ($d = 'A'; $d <= 'C'; $d++) {
-        shuffle($ar);
-        for ($q = 1; $q <= 6; $q++) {
-            $query = "INSERT INTO `Questions-{$user}` (`Pseudo ID`, `Question ID`) "
-                    . "VALUES ('{$d}{$q}', '{$d}{$ar[$q - 1]}');";
+    $buffer_size = $CONST["buffer"];
+    for ($l = 1; $l <= $CONST["levels"]; $l++) {
+        for ($q = 1; $q <= $CONST["questions"]; $q++) {
+            $random = rand(1, $buffer_size);
+            $query = "INSERT INTO `Questions-{$user}` (`Question Number`, `Question ID`) "
+                    . "VALUES ('{$l}{$q}', '{$l}{$q}{$random}');";
             mysqli_query($db_connection, $query);
         }
     }
     unset($q);
-    unset($d);
+    unset($l);
     return FALSE;
 }
 
-if (isset($_POST["usernamesignup"]) && isset($_POST["emailsignup"]) &&
+if (isset($_POST["usernamesignup"]) && isset($_POST["anweshasignup"]) &&
         isset($_POST["passwordsignup"]) && isset($_POST["passwordsignup_confirm"])) {
     $error_msg = check();
 }
@@ -120,7 +125,7 @@ if (isset($_POST["usernamesignup"]) && isset($_POST["emailsignup"]) &&
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="navbar.css" type="text/css" rel="stylesheet" />
         <link href="register.css" type="text/css" rel="stylesheet" />
-        <title>NJATH - Celesta 2k13 Registration</title>
+        <title>NJATH - Anwesha 2k14 Registration</title>
     </head>
     <body>
         <nav class="cl-effect-9">
@@ -140,6 +145,10 @@ if (isset($_POST["usernamesignup"]) && isset($_POST["emailsignup"]) &&
                 <span>IIT Patna</span>
                 <span>All about our college</span>
             </a>
+            <a href="http://2014.anwesha.info">
+                <span>Anwesha 2014</span>
+                <span>The Anwesha website...</span>
+            </a>
             <a href="rules.php">
                 <span>Rules</span>
                 <span>The law of the Land!!!</span>
@@ -149,62 +158,61 @@ if (isset($_POST["usernamesignup"]) && isset($_POST["emailsignup"]) &&
 
         <div id="wrapper">
             <form id="register" action="register.php" method="POST" autocomplete="on">
-                <h1> Sign up </h1> 
-                <?php if (isset($error_msg["component"])) {
-                    ?>
+                <h1> Sign up </h1>
+<?php if (isset($error_msg["component"])) {
+    ?>
                     <p id="error-msg">
-                        <?php
-                        echo $error_msg["msg"];
-                        ?>
+    <?php
+    echo $error_msg["msg"];
+    ?>
                     </p>
-                    <?php
-                }
-                ?>
-                <p> 
+                        <?php
+                    }
+                    ?>
+                <p>
                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                    <input id="usernamesignup" name="usernamesignup" required="required" 
-                           type="text" placeholder="eg. thejoker69" 
+                    <input id="usernamesignup" name="usernamesignup" required="required"
+                           type="text" placeholder="eg. thejoker69"
                            value="<?php if (isset($error_msg["component"]) && $error_msg["component"] != "username") echo $_POST["usernamesignup"]; ?>"
                            class="<?php if (isset($error_msg["component"]) && $error_msg["component"] == "username") echo 'error-component'; ?>"/>
                 </p>
-                <p id="email-input"> 
-                    <label for="emailsignup" class="youmail" data-icon="e" > Your college email</label>
-                    <input id="emailsignup" name="emailsignup" required="required" 
-                           type="text" placeholder="eg. batman.cs12"
-                           value="<?php if (isset($error_msg["component"]) && $error_msg["component"] != "username") echo $_POST["emailsignup"]; ?>"
-                           class="<?php if (isset($error_msg["component"]) && $error_msg["component"] == "email") echo 'error-component'; ?>"/>
-                    <span> @ iitp.ac.in </span>
+                <p>
+                    <label for="anweshasignup" class="anwesha" data-icon="a">Anwesha ID</label>
+                    <input id="anweshasignup" name="anweshasignup" required="required"
+                           type="text" placeholder="eg. ANW000000"
+                           value="<?php if (isset($error_msg["component"]) && $error_msg["component"] != "anwesha") echo $_POST["anweshasignup"]; ?>"
+                           class="<?php if (isset($error_msg["component"]) && $error_msg["component"] == "anwesha") echo 'error-component'; ?>"/>
                 </p>
-                <p> 
+                <p>
                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                    <input id="passwordsignup" name="passwordsignup" required="required" 
+                    <input id="passwordsignup" name="passwordsignup" required="required"
                            type="password" placeholder="eg. X8df!90EO"
                            class="<?php if (isset($error_msg["component"]) && $error_msg["component"] == "password") echo 'error-component'; ?>"/>
                 </p>
-                <p> 
+                <p>
                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" 
+                    <input id="passwordsignup_confirm" name="passwordsignup_confirm"
                            required="required" type="password" placeholder="eg. X8df!90EO"
                            class="<?php if (isset($error_msg["component"]) && $error_msg["component"] == "password") echo 'error-component'; ?>"/>
                 </p>
-                <p class="signin button"> 
-                    <input type="submit" value="Sign up"/> 
+                <p class="signin button">
+                    <input type="submit" value="Sign up"/>
                 </p>
                 <p class="change_link">Already a member ?<a href="index.php" class="to_register"> Go and log in </a>
                 </p>
             </form>
         </div>
-        <?php
-        if (isset($error_msg) && $error_msg != TRUE) {
-            ?>
+<?php
+if (isset($error_msg) && $error_msg != TRUE) {
+    ?>
             <div id="done-display">
                 <div>
                     <h2> Registration SUCCESSFUL!! </h2>
                     <p>  Click <a href="rules.php">here</a> to continue. </p>
                 </div>
             </div>
-            <?php
-        }
-        ?>
+    <?php
+}
+?>
     </body>
 </html>
