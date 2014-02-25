@@ -7,64 +7,148 @@ and open the template in the editor.
     Created on : 6 Nov, 2013, 11:47:29 AM
     Author     : ashutosh
 */
-@import "./fonts/mayaculpa.css";
 @import "./fonts/selfdestruct.css";
-@import "./fonts/zephyr.css";
+@import "./fonts/hadley.css";
+@import "./fonts/blackrose.css";
+@import "./fonts/telegrama.css";
 
 * { 
     margin: 0; 
     outline: none; 
 }
+
 body { 
     background: url("./images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
+    min-width: 1200px;
+    overflow: auto;
 }
 
 #user-info {
     position: fixed;
-    right:0;
-    top:0;
+    right: 5px;
+    top: 55px;
+    height: 85%;
+    width: 40%;
+    margin: 10px;
+    min-width: 450px;
+    overflow: auto;
 }
 #user-info #user {
-    font-family: "Zephyr";
+    font-family: "Black Rose";
     position: absolute;
-    right: 150px;
-    top: 0.5em;
+    right: 10%;
+    top: 5%;
     color: #fff;
-    text-shadow: 0 0 2px #222 inset;
+    text-shadow: 0 0 5px #000;
+    font-size: 2.5em;
+    font-weight: 100;
 }
-#user-info #score{
+#user-info #level-score, #total-score{
     position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2d84ff, 0 0 30px #2d84ff, 0 0 40px #2d84ff, 0 0 50px #2d84ff, 0 0 75px #2d84ff;
-    letter-spacing: 5px;
-    font: 100px 'Self Destruct';
+    left: 20%;
+    color: #E1EBF9;
+    font-family: 'Self Destruct';
+    font-size: 40px;
+    font-weight: 100;
+    text-shadow: 0 0 15px #fff, 0 0 20px #2d84ff, 0 0 30px #2d84ff, 0 0 40px #2d84ff, 0 0 50px #2d84ff, 0 0 75px #2d84ff;
 }
-#user-info #score-increase {
-    font: 35px 'Self Destruct';
+
+#user-info h2 span {
+    text-shadow: 0 0 15px #fff, 0 0 20px #2d84ff, 0 0 30px #2d84ff, 0 0 40px #2d84ff, 0 0 50px #2d84ff, 0 0 75px #2d84ff;
     position: absolute;
-    top: 5em;
-    right: 5em;
-    opacity: 0;
-    animation: increase-score 3s ease-in-out 1s 1 normal forwards;
+    right: -80%;
+    top:0;
 }
-@keyframes increase-score {
-    0% { }
-    15% {opacity: 1;}
-    100% {opacity: 0;top: 1em;}
+
+#user-info #level-score {
+    bottom: 15%;
 }
-@-webkit-keyframes increase-score {
-    0% { }
-    15% {opacity: 1;}
-    100% {opacity: 0;top: 1em;}
+
+#user-info #total-score {
+    bottom: 5%;
+}
+
+#user-info #tchest {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    list-style-type: none;
+}
+
+#user-info #tchest>li {
+    display: inline-block;
+}
+
+#user-info #tchest img {
+    width: 40px;
+    height: 40px;
+}
+
+#user-info #increase {
+    position: absolute;
+    left: 0px;
+    width: 65%;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    line-height: 175%;
+    bottom: 25%;
+    padding: 0px 15%;
+    overflow: hidden;
+}
+
+#user-info #increase>li {
+    font-family: "Self Destruct";
+    position: relative;
+    -webkit-animation: flyout 20s linear forwards;
+    -moz-animation: flyout 20s linear forwards;
+    animation: flyout 20s linear forwards;    
+    text-shadow: 2px 2px 2px #ccc, 1px 1px 4px #ddd, 0px 0px 6px #fff;
+    font-size: 1.5em;
+    color: #222;
+}
+
+#user-info #increase>li:nth-child(2) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#user-info #increase>li:nth-child(3) {
+    -webkit-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+#user-info #increase>li:nth-child(4) {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+#user-info #increase>li:nth-child(5) {
+    -webkit-animation-delay: 2.0s;
+    animation-delay: 2.0s;
+}
+
+#user-info #increase>li>span {
+    position: absolute;
+    right: 0;
+}
+
+@keyframes flyout {
+    0% {left: 10%; opacity: 0;}
+    10% {left: 10%; opacity: 1;}
+    25% {left: 10%; opacity: 1;}
+    100% {left: 10000px;}
+}
+@-webkit-keyframes flyout {
+    0% {left: 10%; opacity: 0;}
+    10% {left: 10%; opacity: 1;}
+    25% {left: 10%; opacity: 1;}
+    100% {left: 10000px;}
 }
 #button-wrapper {
     position: fixed;
-    top: 3.5em;
-    left: 1em;
-    height: 38em;
-    width: 50em;
+    top: 55px;
+    left: 2%;
+    height: 85%;
+    width: 60%;
+    min-width: 450px;
+    max-width: 775px;
     font-weight: 100; 
     overflow: auto;
     box-shadow: -5px 5px 10px 5px #111;
@@ -78,9 +162,27 @@ body {
     background-color:#282828;
     background-size:16px 16px;
 }
+#button-wrapper #question-div {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    overflow: auto;
+    width:100%;
+}
+#button-wrapper #question-div.minimized {
+    height: 80%;
+}
+#button-wrapper #advance-div {
+    top: 3%;
+    height: 20%;
+    position: absolute;
+    width: 44%;
+    right: 0;
+}
 #button-wrapper ul {
     list-style-type: none;
-    margin: 0 1.5em;
+    margin: 0 2.5%;
     padding: 0;
     width: 95%;
 }
@@ -94,29 +196,16 @@ body {
 }
 #button-wrapper h3 {
     margin: 1.3em 0.5em 0.75em;
-    padding: 0 0 15px 1em;
+    padding: 0 0 3% 4%;
     color: #004ab2;
-    font-weight: normal;
-    font-family: 'Maya Culpa', sans-serif;
+    font-family: 'Hadley', sans-serif;
     position: relative;
     text-shadow: 0 2px 0 rgba(255,255,255,0.5),
         0 0 2px rgba(0,0,0,0.5);
-    font-size: 30px;
+    font-size: 40px;
     line-height: 4px;
+    font-weight: bold;
 }
-#button-wrapper h3:after { 
-    position: absolute;
-    content: "";
-    height: 1px;
-    border-radius: 2px;
-    left: 0;
-    bottom: 0;
-    box-shadow: 
-        0 -1px 0 rgba(0,0,0,0.1), 
-        0 1px 0 rgba(255,255,255,0.6),
-        5px 0 10px rgba(255,255,255,0.7);
-    width: 100%;
-} 
 #button-wrapper .a-btn{
     background:-webkit-gradient(linear,left top,left bottom,color-stop(rgba(0, 0, 0, 0),0),color-stop(rgba(0, 0, 0, 0.2),1));
     background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
@@ -245,13 +334,6 @@ body {
     box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
     border-color:#80a9da;
 }
-#button-wrapper .a-btn:active .a-btn-icon-right span{
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    transform:rotate(360deg);
-}
 #button-wrapper .a-btn-slide-icon{
     position:absolute;
     top:34px;
@@ -304,6 +386,96 @@ body {
     color: #006633;
     text-shadow:0px -1px 1px #002814;
 }
+#button-wrapper #advance{
+    text-decoration: none;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    padding:10px 30px 10px 70px;
+    position:relative;
+    float:left;
+    height: 50px;
+    display:block;
+    overflow:hidden;
+    margin:10px;
+    background:#9cedef;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#b7f2f4,0),color-stop(#7ce7ea,1));
+    background:-webkit-linear-gradient(top, #b7f2f4 0%, #7ce7ea 100%);
+    background:-moz-linear-gradient(top, #b7f2f4 0%, #7ce7ea 100%);
+    background:-o-linear-gradient(top, #b7f2f4 0%, #7ce7ea 100%);
+    background:linear-gradient(top, #b7f2f4 0%, #7ce7ea 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7f2f4', endColorstr='#7ce7ea',GradientType=0 );
+    border:1px solid #90c6c8;
+    border-color:#90c6c8 #78bdc0 #65b6ba;
+    -webkit-box-shadow:0px -5px 0px 0px #458a8c, 0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8);
+    -moz-box-shadow:0px -5px 0px 0px #458a8c, 0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8);
+    box-shadow:0px -5px 0px 0px #458a8c, 0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8);
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+#button-wrapper #advance .advance-symbol{
+    opacity: 0.2;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    height: 70%;
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#button-wrapper #advance .advance-text{
+    font-size:20px;
+    color:#437b7d;
+    text-shadow:0 1px 0 #bef3f5;
+    line-height:30px;
+    vertical-align: bottom;
+    font-weight:bold;
+    font-size: 20px;
+    font-family:"Telegrama";
+    display:block;
+}
+#button-wrapper #advance .advance-slide-text{
+    font-family:Arial, sans-serif;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#555;
+    text-shadow:0px 1px 1px rgba(255,255,255,0.9);
+}
+#button-wrapper #advance:hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: perspective(600px) rotateY( 45deg );
+}
+#button-wrapper #advance:hover .advance-symbol{
+    opacity:0.7;
+    animation: rotate 3s linear infinite normal;
+    -webkit-animation: rotate 3s linear infinite normal;
+}
+#button-wrapper #advance:active{
+    -webkit-transform:scale(0.95);
+    -moz-transform:scale(0.95);
+    -ms-transform:scale(0.95);
+    -o-transform:scale(0.95);
+    transform: scale(0.95);
+    -webkit-box-shadow:0px 0px 0px 1px #458a8c, 0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8), 0px 1px 1px 2px #fff;
+    -moz-box-shadow:0px 0px 0px 1px #458a8c, 0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8), 0px 1px 1px 2px #fff;
+    box-shadow:0px 0px 0px 1px #458a8c, 0 1px 1px #d5d5d5, inset 0 1px 0 rgba(255,255,255,0.8), 0px 1px 1px 2px #fff;
+}
+
+@keyframes rotate {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+@-webkit-keyframes rotate {
+    0%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(360deg);}
+}
 
 #complete-hide {
     position: fixed;
@@ -312,8 +484,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(8, 8, 8, 0.6);
-    animation: vanish 1s ease-out 1 normal;
-    -webkit-animation: vanish 1s ease-out 1 normal;
+    animation: vanish 1s ease-out 2s normal;
+    -webkit-animation: vanish 1s ease-out 2s normal;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     z-index: 100;
@@ -338,6 +510,7 @@ body {
 
 #complete-hide #message-display h2 {
     text-align: center;
+    text-shadow: 0 0 2px #aaa;
 }
 
 @keyframes vanish {
