@@ -7,15 +7,15 @@ and open the template in the editor.
     Created on : 6 Nov, 2013, 11:47:29 AM
     Author     : ashutosh
 */
-@import "./fonts/vanthian.css";
-@import "./fonts/zephyr.css";
+@import "../fonts/vanthian.css";
+@import "../fonts/zephyr.css";
 
 * { 
     margin: 0; 
     outline: none; 
 }
 body { 
-    background: url("./images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
+    background: url("../images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
 }
 
 #user-info {
@@ -304,7 +304,7 @@ body {
     left:50%;
     top:50%;
     margin:-20px 0px 0px -20px;
-    background:transparent url(./images/arrow_right.png) no-repeat 50% 55%;
+    background:transparent url(../images/arrow_right.png) no-repeat 50% 55%;
     -webkit-transition:all 0.3s linear;
     -moz-transition:all 0.3s linear;
     -o-transition:all 0.3s linear;

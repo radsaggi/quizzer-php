@@ -1,0 +1,25 @@
+<div id="question-div" ng-show="true">
+     <h3 class="type-label">level {{buttonBoxHelper.level}}</h3>
+     <ul>
+         <li ng-repeat="q in buttonBoxHelper.questions">
+            <a href ng-click="" class="a-btn {{buttonBoxHelper.qstateString(q)}}">
+                <span class="a-btn-slide-text">{{q.qvalue}}</span>
+                <img ng-src="{{buttonBoxHelper.qimage(q)}}" alt="{{buttonBoxHelper.qstateString(q)}}"/>
+                <span class="a-btn-text">
+                    <small>{{buttonBoxHelper.qstateString(q)}}</small>
+                    Question 9
+                </span>
+                <span class="a-btn-icon-right"><span></span></span>
+                <span class="a-btn-slide-icon"></span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="advance-div" ng-show="false">
+    <a href ng-click="" id="advance">
+        <img class="advance-symbol" src="./images/star.png">
+        <span class="advance-text">Advance Level</span> 
+        <span class="advance-slide-text">Move on to the next level...</span>
+    </a>
+</div>

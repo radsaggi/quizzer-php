@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="njath">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>NJATH - Question</title>
+        <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+        <link href="css/profile.css" rel="stylesheet" type="text/css" />
+        <link href="css/question.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/profile.js"></script>
+        <script type="text/javascript" src="js/question.js"></script>
+    </head>
+    <body ng-controller="DisplayController as display">
+
+        <nav-bar></nav-bar>
+
+        <div id="profile-page" ng-show="display.showingProfilePage()">
+            <button-wrapper id="button-wrapper"></button-wrapper>
+        <!--<user-info id="user-info"></user-info>-->
+        </div>
+
+        <div id="question-page" ng-show="display.showingQuestionPage()">
+            <question-display></question-display>
+            <form-wrapper id="form-wrapper"></form-wrapper>
+        </div>
+    </body>
+</html>

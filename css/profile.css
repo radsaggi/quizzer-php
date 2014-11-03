@@ -3,22 +3,23 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+
+/*
     Created on : 6 Nov, 2013, 11:47:29 AM
     Author     : ashutosh
 */
-@import "./fonts/selfdestruct.css";
-@import "./fonts/hadley.css";
-@import "./fonts/blackrose.css";
-@import "./fonts/telegrama.css";
+@import "../fonts/selfdestruct.css";
+@import "../fonts/hadley.css";
+@import "../fonts/blackrose.css";
+@import "../fonts/telegrama.css";
 
-* { 
+* {
     margin: 0; 
     outline: none; 
 }
 
-body { 
-    background: url("./images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
+body {
+    background: url("../images/cover.jpg") repeat scroll center center rgb(100, 91, 92);
     min-width: 1200px;
     overflow: auto;
 }
@@ -295,7 +296,7 @@ body {
     top:50%;
     margin:-20px 0px 0px -20px;
     border:1px solid rgba(0,0,0,0.5);
-    background:#5b5b5b url(./images/arrow_right.png) no-repeat center center;
+    background:#5b5b5b url(../images/arrow_right.png) no-repeat center center;
     -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
     -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
     box-shadow:0px 1px 1px rgba(255,255,255,0.3) inset, 0px 1px 2px rgba(255,255,255,0.5);
@@ -339,7 +340,7 @@ body {
     top:34px;
     width:22px;
     height:22px;
-    background:transparent url(./images/arrow_right_black.png) no-repeat top left;
+    background:transparent url(../images/arrow_right_black.png) no-repeat top left;
     left:85%;
     opacity:0;
 }
